@@ -108,18 +108,17 @@
                 void characterSlot.offsetWidth;
                 characterSlot.classList.add('hit-animation');
 
-                if (hitEffect) hitEffect.innerText = `${effectIcon} ${weaponIcon} ${effectIcon}`;
-                if (!characterSlot.querySelector('img')) {
-                    characterSlot.innerText = '😵‍💫';
+                const alternateCharacterImage = characterSlot.dataset.hitSrc;
+                if (alternateCharacterImage) {
+                    characterSlot.src = alternateCharacterImage;
                 }
+
+                if (hitEffect) hitEffect.innerText = `${effectIcon} ${weaponIcon} ${effectIcon}`;
                 if (attackCaption) {
                     attackCaption.innerText = `โดน "${weaponName}" เข้าเต็มๆ! ความเดือดลดลง 10° (เหลือ ${nextLevel}°C)`;
                 }
 
                 setTimeout(() => {
-                    if (!characterSlot.querySelector('img')) {
-                        characterSlot.innerText = nextLevel === 0 ? '🥰' : '🥺';
-                    }
                     if (hitEffect) hitEffect.innerText = '💕';
                 }, 450);
             });
