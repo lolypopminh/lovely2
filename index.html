@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าหลัก — พื้นที่ง้อเธอคนเดียว ❤️🌡️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- แถบเมนูเปลี่ยนหน้า -->
+        <nav class="top-nav" aria-label="เมนูหลัก">
+            <a href="index.html" class="nav-link active">🏠 หน้าหลัก</a>
+            <a href="memories.html" class="nav-link">📦 กล่องความทรงจำ</a>
+            <a href="minigame.html" class="nav-link">🎮 มินิเกมง้อแฟน</a>
+        </nav>
+
+        <div class="header-badge">โอ๋ๆ น้าา เค้าผิดไปแย้ววค้าบบคราวหน้าจะไม่วีนใส่🥹💕</div>
+        <h1>พื้นที่ง้อเธอคนเดียว</h1>
+        <p class="subtitle">ขอโทษนะคนดี ตั้งแต่เมื่อวานที่ดื้อไปแล้วทำให้เธอวีนวันนี้ แล้วก้อขอโทษที่วันใส่เธอนะคนดีคะ💌💗</p>
+
+        <!-- การ์ดมิเตอร์วัดอุณหภูมิความโกรธ -->
+        <div class="card">
+            <h3 style="margin: 0 0 6px; color: #c93b5b;">🌡️ มิเตอร์วัดระดับอารมณ์คุณแฟน(ผ้าไหม)</h3>
+            <div class="thermo-wrapper">
+                <div class="scale-ticks">
+                    <span>100°</span>
+                    <span>75°</span>
+                    <span>50°</span>
+                    <span>25°</span>
+                    <span>0°</span>
+                </div>
+                <div class="thermo-column">
+                    <div class="thermo-tube-outer">
+                        <div class="thermo-liquid" id="meter-fill"></div>
+                    </div>
+                    <div class="thermo-bulb" id="bulb-label">50°</div>
+                </div>
+                <div class="thermo-status">
+                    <div id="status-emoji">😡</div>
+                    <div class="temp-readout" id="temp-text">50°C — กำลังงอน</div>
+                    <p id="status-text">กดปุ่มด้านล่างบอกความรู้สึกได้เลยนะ</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ปุ่มหลัก -->
+        <div class="actions-grid">
+            <button type="button" class="btn btn-primary" id="btn-forgiven">หายงอนแล้วจ้า 😊</button>
+            <button type="button" class="btn btn-normal" id="btn-unforgiven">ยังไม่หายงอน 😤</button>
+        </div>
+
+        <!-- การ์ดลิงก์ไปหน้าอื่น -->
+        <div class="page-links-grid">
+            <a href="memories.html" class="portal-card">
+                <div class="portal-icon">📦</div>
+                <div class="portal-title">กล่องความทรงจำ</div>
+                <div class="portal-desc">กดเข้าไปดูรูปคู่และข้อความดีๆ ของเรา</div>
+            </a>
+            <a href="minigame.html" class="portal-card">
+                <div class="portal-icon">🎮</div>
+                <div class="portal-title">มินิเกมลงทัณฑ์</div>
+                <div class="portal-desc">กดเข้าไปเลือกอุปกรณ์มาตี/แกล้งได้เลย</div>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

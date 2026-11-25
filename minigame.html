@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>มินิเกมลงทัณฑ์คนผิด 🎮💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="top-nav" aria-label="เมนูหลัก">
+            <a href="index.html" class="nav-link">🏠 หน้าหลัก</a>
+            <a href="memories.html" class="nav-link">📦 กล่องความทรงจำ</a>
+            <a href="minigame.html" class="nav-link active">🎮 มินิเกมง้อแฟน</a>
+        </nav>
+
+        <div class="header-badge">ระดับความเดือดตอนนี้: <strong id="mini-meter-value">50°C</strong> 🌡️</div>
+        <h1>โหมดลงทัณฑ์คนผิด!</h1>
+        <p class="subtitle">เบบี๋ค้าบบมาเลือกอุปรณ์ลงทัณฑ์ก่อนมาค้าบบ คนสวย</p>
+
+        <div class="card">
+            <h3 style="margin: 0 0 6px; color: #c93b5b;">เลือกอุปกรณ์มาแกล้งได้เลย</h3>
+            <div class="weapons-row">
+                <button type="button" class="weapon-btn" data-weapon="หมอนนุ่มนิ่ม" data-icon="🛌" data-effect="🪶">
+                    <span class="icon">🛌</span>
+                    <span>หมอนนุ่มนิ่ม</span>
+                </button>
+                <button type="button" class="weapon-btn" data-weapon="ช่อดอกไม้" data-icon="💐" data-effect="🌸">
+                    <span class="icon">💐</span>
+                    <span>ช่อดอกไม้</span>
+                </button>
+                <button type="button" class="weapon-btn" data-weapon="พัดลมมือถือ" data-icon="🪭" data-effect="💨">
+                    <span class="icon">🪭</span>
+                    <span>พัดลมมือถือ</span>
+                </button>
+            </div>
+
+            <div class="stage-box">
+                <div id="hit-effect">✨</div>
+                <img src="picture/first.jpg" alt="ตัวละคร" class="character-image" id="character">
+                <!-- <div class="avatar-slot" id="character">🥺</div> -->
+                <p id="attack-caption" style="margin: 10px 0 0; font-size: 0.95rem; color: var(--muted-text);">
+                    พร้อมรับตีมหาสารด้วยความเต็มใจ! หรือจะตีก้นก็ได้นะ
+                </p>
+            </div>
+        </div>
+
+        <div class="actions-grid">
+            <a href="index.html" class="btn btn-primary">⬅️ กลับไปดูมิเตอร์หน้าหลัก</a>
+            <button type="button" class="btn btn-soft" id="btn-reset-meter">รีเซ็ตค่าเริ่มต้น</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
