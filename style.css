@@ -441,6 +441,27 @@ h1 {
     object-fit: cover;
 }
 
+#special-title {
+    position: relative;
+    width: fit-content;
+    max-width: 100%;
+    text-align: center;
+    border: 2px solid #ff00ff;
+    border-radius: 12px;
+    padding: 8px 14px;
+    margin: 15px auto 0;
+}
+
+#special-title::after {
+    content: "🐶💕";
+    position: absolute;
+    top: -0.85em;
+    right: 12px;
+    padding: 0 4px;
+    background: var(--bg-color);
+    font-size: 1.15rem;
+}
+
 #hit-effect {
     font-size: 1.8rem;
     min-height: 2rem;
