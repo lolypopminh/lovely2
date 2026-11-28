@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7f9">
+  <title>Our Memories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="memories.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-badge">♡ Our little album</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Back to birthday page</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="memories-container">
+    <section class="memories-intro" aria-labelledby="memories-title">
+      <span class="memories-kicker">the little things, forever</span>
+      <h1 id="memories-title">Our <span>Memories</span></h1>
+      <p>A little album for all the places we've been, the things we've laughed about, and the moments that are ours.</p>
+    </section>
+
+    <section class="cartoon-card memories-album" aria-label="Our photo album">
+      <div class="album-topline">
+        <div>
+          <h2 class="album-title">The two of us <span aria-hidden="true">♡</span></h2>
+          <p class="album-hint">Your favorite moments, kept together.</p>
+        </div>
+      </div>
+
+      <div class="album-viewer" aria-label="Slideshow">
+        <div id="empty-album" class="empty-album">
+          <span class="empty-heart" aria-hidden="true">♡</span>
+          <h3>Your story goes here</h3>
+          <p>No photos yet. Add pictures to <code>photos/</code> and list them in <code>memories.json</code>, like <code>{"src":"photos/our-day.jpg","caption":"Our day together"}</code>.</p>
+        </div>
+        <figure id="current-memory" class="current-memory" hidden>
+          <img id="memory-image" alt="">
+          <figcaption id="memory-caption"></figcaption>
+        </figure>
+        <button id="previous-photo" class="slide-arrow slide-arrow-previous" type="button" aria-label="Previous photo" disabled>‹</button>
+        <button id="next-photo" class="slide-arrow slide-arrow-next" type="button" aria-label="Next photo" disabled>›</button>
+      </div>
+
+      <div class="album-controls">
+        <span id="photo-count" class="photo-count" aria-live="polite">No photos yet</span>
+        <div class="playback-controls">
+          <button id="play-slideshow" class="btn btn-secondary playback-button" type="button" aria-pressed="false" disabled>
+            <span aria-hidden="true">▶</span> Start slideshow
+          </button>
+        </div>
+      </div>
+      <div id="photo-thumbnails" class="photo-thumbnails" aria-label="Choose a photo"></div>
+      <p id="album-status" class="album-status" role="status" aria-live="polite">Published photos are visible to anyone who can view this website. Add only photos you're happy to share.</p>
+    </section>
+  </main>
+
+  <script src="memories.js"></script>
+</body>
+</html>
